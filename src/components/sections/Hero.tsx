@@ -8,6 +8,9 @@ interface HeroProps {
 }
 
 export function Hero({ theme }: HeroProps) {
+  const [firstName, ...lastNameParts] = contact.name.split(' ');
+  const lastName = lastNameParts.join(' ');
+
   const socials = [
     { Icon: Github, href: contact.github, label: 'GitHub' },
     { Icon: Linkedin, href: contact.linkedin, label: 'LinkedIn' },
@@ -38,7 +41,7 @@ export function Hero({ theme }: HeroProps) {
             transition={{ duration: 0.7, delay: 0.05 }}
             className="text-sm text-slate-400 mb-4 tracking-wide"
           >
-            Software Engineer · AI Systems · Product Engineering
+            {"Hello, I'm"}
           </motion.p>
 
           <motion.h1
@@ -47,10 +50,10 @@ export function Hero({ theme }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="display-title text-[clamp(3.2rem,7.4vw,7.2rem)] font-semibold leading-[0.86] tracking-[-0.055em] text-white"
           >
-            Swetabh
+            {firstName}
             <br />
             <span className={`bg-gradient-to-r ${theme.colors.accent} bg-clip-text text-transparent`}>
-              Salampuria
+              {lastName}
             </span>
           </motion.h1>
 
@@ -60,8 +63,7 @@ export function Hero({ theme }: HeroProps) {
             transition={{ duration: 0.75, delay: 0.2 }}
             className="mt-7 max-w-xl text-base md:text-lg text-slate-300 leading-relaxed"
           >
-            Product-minded engineer building AI systems, real-time platforms, and
-            interfaces where complexity feels effortless.
+            {contact.tagline}
           </motion.p>
 
           <motion.div
@@ -122,8 +124,8 @@ export function Hero({ theme }: HeroProps) {
         >
           {[0, 1].map((copy) => (
             <span key={copy}>
-              Full-stack systems&nbsp;&nbsp;✦&nbsp;&nbsp;Applied AI&nbsp;&nbsp;✦&nbsp;&nbsp;Product
-              engineering&nbsp;&nbsp;✦&nbsp;&nbsp;Real-time experiences&nbsp;&nbsp;✦&nbsp;&nbsp;
+              Web Development&nbsp;&nbsp;✦&nbsp;&nbsp;Data Analytics&nbsp;&nbsp;✦&nbsp;&nbsp;API
+              Engineering&nbsp;&nbsp;✦&nbsp;&nbsp;Modern Systems&nbsp;&nbsp;✦&nbsp;&nbsp;
             </span>
           ))}
         </motion.div>

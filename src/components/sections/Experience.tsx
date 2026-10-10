@@ -9,6 +9,8 @@ interface Props {
 }
 
 export function Experience({ theme }: Props) {
+  if (!experience || experience.length === 0) return null;
+
   return (
     <section id="experience" className="studio-section py-28 px-6 md:px-10 relative">
       <div className="max-w-7xl mx-auto">

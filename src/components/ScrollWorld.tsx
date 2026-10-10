@@ -1,6 +1,6 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useAnimations, useGLTF } from '@react-three/drei';
-import { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Suspense, useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import type { CSSProperties, RefObject } from 'react';
 import type { Group } from 'three';
@@ -534,6 +534,7 @@ function Character({
     oneShot.current?.fadeOut(0.1);
     action.reset();
     action.setLoop(THREE.LoopOnce, 1);
+    // eslint-disable-next-line react-hooks/immutability
     action.clampWhenFinished = true;
     action.setEffectiveTimeScale(1.15);
     action.fadeIn(0.1).play();
@@ -1151,7 +1152,11 @@ export function ScrollWorld() {
   const [workSide, setWorkSide] = useState(1);
   const [message, setMessage] = useState({ text: '', visible: false });
   const [giftOpen, setGiftOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   const dragYawRef = useRef(0);
   const bodyXRef = useRef(moodAnchors.intro);
@@ -1161,10 +1166,6 @@ export function ScrollWorld() {
   const orbHitRef = useRef<HTMLButtonElement>(null);
   const bubbleRef = useRef<HTMLDivElement>(null);
   const lastLine = useRef('');
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     const onMove = (event: PointerEvent) => {

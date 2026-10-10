@@ -5,7 +5,6 @@ import { Building } from './components/sections/Building';
 import { Coding } from './components/sections/Coding';
 import { Education } from './components/sections/Education';
 import { Experience } from './components/sections/Experience';
-import { Extracurricular } from './components/sections/Extracurricular';
 import { FeaturedProjects } from './components/sections/FeaturedProjects';
 import { Footer } from './components/sections/Footer';
 import { GithubProjects } from './components/sections/GithubProjects';
@@ -50,7 +49,6 @@ function App() {
         <Achievements theme={theme} />
         <Education theme={theme} />
         <Responsibility theme={theme} />
-        <Extracurricular theme={theme} />
         <GithubProjects theme={theme} />
         <Footer theme={theme} />
       </main>

@@ -9,9 +9,9 @@ interface Props {
 
 export function About({ theme }: Props) {
   const stats = [
-    { value: '2026', label: 'Graduation' },
-    { value: '1955', label: 'LeetCode' },
-    { value: '8.05', label: 'CPI' },
+    { value: '2027', label: 'Graduation' },
+    { value: 'B.Tech', label: 'Degree' },
+    { value: 'CSE', label: 'Field' },
   ];
 
   return (
@@ -20,7 +20,7 @@ export function About({ theme }: Props) {
         <SectionReveal>
           <SectionHeading
             title="About"
-            subtitle="A practical engineer focused on systems that survive real usage—clean interfaces, durable backends, and AI that earns its place in production."
+            subtitle="Computer Science Engineering student bridging web development and data analytics to build impactful solutions."
             gradient={theme.colors.accent}
             kicker="Introduction"
           />

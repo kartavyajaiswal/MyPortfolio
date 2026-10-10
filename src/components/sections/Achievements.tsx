@@ -11,6 +11,8 @@ interface Props {
 }
 
 export function Achievements({ theme }: Props) {
+  if (!achievements || achievements.length === 0) return null;
+
   return (
     <section id="achievements" className="studio-section py-28 px-6 md:px-10 relative">
       <div className="max-w-7xl mx-auto">

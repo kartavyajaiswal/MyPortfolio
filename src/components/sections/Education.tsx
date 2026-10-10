@@ -8,13 +8,15 @@ interface Props {
 }
 
 export function Education({ theme }: Props) {
+  if (!education || education.length === 0) return null;
+
   return (
     <section id="education" className="studio-section py-28 px-6 md:px-10 relative">
       <div className="max-w-7xl mx-auto">
         <SectionReveal>
           <SectionHeading
             title="Education"
-            subtitle="Civil engineering taught systems thinking. Computer science gave me the tools to build those systems in software."
+            subtitle="Academic background and foundation in Computer Science Engineering."
             gradient={theme.colors.accent}
             kicker="Background"
           />

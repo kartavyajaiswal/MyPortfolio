@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { navLinks } from '../../data/portfolio';
+import { contact, navLinks } from '../../data/portfolio';
 import type { Theme } from '../../data/portfolio';
 
 interface NavProps {
@@ -28,7 +28,7 @@ export function Nav({ theme }: NavProps) {
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
         <a href="#hero" className="display-title text-lg font-semibold tracking-tight">
           <span className={`bg-gradient-to-r ${theme.colors.accent} bg-clip-text text-transparent`}>
-            Swetabh
+            {contact.name.split(' ')[0]}
           </span>
           <span className="ml-1 text-[10px] align-top text-white/35">®</span>
         </a>

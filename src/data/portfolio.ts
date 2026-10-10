@@ -24,48 +24,43 @@ export interface FeaturedProject {
 }
 
 export const contact = {
-  name: 'Kartavya Jaiswal',
+  name: 'Kartavya Jaisal',
   role: 'B.Tech CSE Student & Developer',
   title: 'B.Tech CSE Student & Developer',
-  email: 'swetabhsalampuria@gmail.com',
-  phone: '+91-9250668412',
-  whatsapp: '+91-8544312081',
-  github: 'https://github.com/Swetabh48',
-  githubUser: 'Swetabh48',
-  linkedin: 'https://www.linkedin.com/in/swetabh-salampuria-baa112284/',
+  email: 'kartavyajaiswal242@gmail.com',
+  phone: '+91-9170336632',
+  whatsapp: '+91-9170336632',
+  github: 'https://github.com/kartavyajaiswal',
+  githubUser: 'kartavyajaiswal',
+  linkedin: 'https://www.linkedin.com/in/kartavyajaiswal',
   resume:
-    'https://drive.google.com/file/d/1xETpBfPwY5vwmN1fOM_9bLwxrjthz-SS/view?usp=sharing',
-  tagline: 'B.Tech CSE Student & Developer',
-  availability: 'Open to full-time software engineering roles',
+    'https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk',
+  tagline:
+    'B.Tech CSE student passionate about Full Stack Development, DSA, and building impactful, practical software solutions.',
+  availability:
+    'Open to full-time Software Engineering and Full Stack Development opportunities',
 };
 
 export const about = {
   paragraphs: [
-    'I am a Software Engineer focused on building production systems that blend modern web architecture, practical AI, and clean interfaces. Currently at Wavexcel Technologies on a Siemens Energy engagement, I work on proposal workflows, document intelligence, and client-facing delivery systems.',
-    'My background combines a B.Tech at MNNIT Allahabad with a Computer Science minor, competitive programming discipline, and hands-on product building across marketplaces, ML visualization, real-time collaboration, and regulated-domain platforms.',
-    'I care about clarity, measurable outcomes, and software that survives contact with real users and not just demos that look good in slides.',
+    'I am a Computer Science Engineering student pursuing my B.Tech at Galgotias University, Greater Noida (Expected June 2027). I am focused on Full Stack Development and strengthening my problem-solving skills through Data Structures and Algorithms. I enjoy building practical web applications, developing backend APIs, and working on projects that solve real-world problems. I am actively looking for opportunities to apply my technical skills, learn from experienced teams, and grow as a Software Engineer.',
   ],
 };
 
 export const education = [
   {
-    name: 'MNNIT Allahabad',
-    degree: 'B.Tech. Civil Engineering · Minor in Computer Science & Technology',
-    year: '2022 – 2026',
-    score: 'CPI: 8.05',
+    name: 'Galgotias University',
+    degree: 'B.Tech. Computer Science and Engineering',
+    year: '2023 – 2027',
+    score: 'CPI: 6.75',
   },
   {
-    name: 'S.K.P. Vidya Vihar, Bhagalpur',
-    degree: 'CBSE — Class XII',
+    name: 'Saint Ann College',
+    degree: 'ICSE — Class XII',
     year: '2022',
-    score: '93.4%',
+    score: '76.4%',
   },
-  {
-    name: 'Mount Assisi School, Bhagalpur',
-    degree: 'ICSE — Class X',
-    year: '2020',
-    score: '97.4%',
-  },
+
 ];
 
 export const coursework = [
@@ -77,189 +72,87 @@ export const coursework = [
   'OOPs',
 ];
 
-export const experience = [
-  {
-    role: 'Software Engineer',
-    company: 'Wavexcel Technologies Pvt. Ltd.',
-    client: 'Siemens Energy Ltd.',
-    location: 'Gurugram, Haryana',
-    period: 'January 2026 – July 2026',
-    bullets: [
-      'Designed a few-shot Azure OpenAI extraction pipeline (Python/FastAPI) that inferred a 95-field schema from 15–20 labeled samples, replacing a brittle hardcoded field catalog.',
-      'Shipped async FastAPI job APIs with SSE progress streaming and Excel/HTML/PDF export for a production .NET MAUI Windows client, keeping long-running work off the request path.',
-      'Built an iterative OCR + AI-vision correction loop (PaddleOCR, Hermes) that reconstructed structured HTML layouts from unstructured PDFs.',
-      'Implemented a formula-driven computation engine mapping 31 input drivers to 179 dependent outputs; validated with a 17-case suite at 100% pass rate.',
-      'Built a multi-agent LOS GenAI pipeline (planning agent → doc/extract agent → formula backbone): the planner acts as a readiness gate and writes a project plan of record; the doc agent extracts only bound drivers from staged sources, then calculates and fills HTML/Excel/PDF datasheets.',
-      'Shipped a confidence-gated review UI that surfaced low-certainty extractions first, cutting manual scan time by letting reviewers jump straight to uncertain fields.',
-      'Built versioned client configuration (schema + computation profiles) so new Siemens project templates could be onboarded without redeploying the Windows app.',
-      'Added end-to-end job observability (queued → OCR → extract → compute → export) with retryable stages and actionable failure states in the MAUI client.',
-    ],
-  },
-];
+// export const experience = [
+//   {
+//     role: 'Software Engineer',
+//     company: 'Wavexcel Technologies Pvt. Ltd.',
+//     client: 'Siemens Energy Ltd.',
+//     location: 'Gurugram, Haryana',
+//     period: 'January 2026 – July 2026',
+//     bullets: [
+//       'Designed a few-shot Azure OpenAI extraction pipeline (Python/FastAPI) that inferred a 95-field schema from 15–20 labeled samples, replacing a brittle hardcoded field catalog.',
+//       'Shipped async FastAPI job APIs with SSE progress streaming and Excel/HTML/PDF export for a production .NET MAUI Windows client, keeping long-running work off the request path.',
+//       'Built an iterative OCR + AI-vision correction loop (PaddleOCR, Hermes) that reconstructed structured HTML layouts from unstructured PDFs.',
+//       'Implemented a formula-driven computation engine mapping 31 input drivers to 179 dependent outputs; validated with a 17-case suite at 100% pass rate.',
+//       'Built a multi-agent LOS GenAI pipeline (planning agent → doc/extract agent → formula backbone): the planner acts as a readiness gate and writes a project plan of record; the doc agent extracts only bound drivers from staged sources, then calculates and fills HTML/Excel/PDF datasheets.',
+//       'Shipped a confidence-gated review UI that surfaced low-certainty extractions first, cutting manual scan time by letting reviewers jump straight to uncertain fields.',
+//       'Built versioned client configuration (schema + computation profiles) so new Siemens project templates could be onboarded without redeploying the Windows app.',
+//       'Added end-to-end job observability (queued → OCR → extract → compute → export) with retryable stages and actionable failure states in the MAUI client.',
+//     ],
+//   },
+// ];
 
 export const featuredProjects: FeaturedProject[] = [
   {
-    title: 'SpeakEasy',
-    role: 'AI speech & interview practice',
+    title: 'CollabDoc',
+    role: 'Real-Time Collaborative Document Editor',
     description:
-      'A browser-based speech and essay practice studio with Whisper transcription, a tiered evaluator, combinatorial topics across eight modes, and a FastAPI board-interview agent loop—zero-account, local-storage-only.',
-    tech: ['Next.js', 'React', 'TypeScript', 'FastAPI', 'SQLite', 'PostgreSQL'],
+      'A full-stack real-time collaborative document editor that enables multiple users to write and edit documents together with live synchronization, user presence, and document history.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'TipTap', 'Yjs', 'Node.js', 'Express', 'Socket.io', 'MongoDB', 'JWT'],
     highlights: [
-      'In-browser Whisper + tiered evaluator (hosted LLM → Ollama → heuristic grader)',
-      'Combinatorial topic engine across 8 practice modes with local fingerprinting',
-      'UPSC/IES/IFS board-interview agents with RSS current-affairs and adaptive cross-questioning',
-      'Client-side proctoring and growth dashboard on local-storage-only architecture',
+      'Real-time multi-user editing powered by Yjs CRDT with live synchronization and colored user cursors',
+      'Implemented user authentication and document management using JWT, bcryptjs, and MongoDB',
+      'Built document persistence, revision history, document locking, tags, pinning, and offline support',
+      'Added speech-to-text, emoji reactions, synchronized Pomodoro timer, QR sharing, and PDF/Markdown/Text export',
+      'Deployed the frontend on Vercel and backend on Render for a complete full-stack application',
     ],
-    github: 'https://github.com/Swetabh48/SpeakEasy',
-    live: 'https://speakeasy-two-peach.vercel.app',
+    github: 'https://github.com/kartavyajaiswal/CollabDoc',
+    live: 'collab-doc-psi.vercel.app',
     gradient: 'from-amber-400 via-orange-500 to-rose-500',
-    source: 'resume',
+    source: 'Personal Project',
   },
-  {
-    title: 'MealDeal',
-    role: 'AI product experience',
-    description:
-      'A personalized nutrition product that turns goals and medical constraints into meals, groceries, workouts, and contextual AI guidance—with async Gemini jobs and a hardened QA suite.',
-    tech: ['Next.js', 'TypeScript', 'Gemini', 'MongoDB', 'NextAuth', 'Zod'],
-    highlights: [
-      'Two-stage async Gemini pipeline with job-polling off the request path',
-      'Menu OCR, doctor chat, meal swaps, and Zod-enforced LLM output',
-      'NextAuth (credentials + Google), MongoDB, and Zod-validated APIs',
-      '746-assertion QA suite: 84/84 feature checks, 97.7% pass under 100-user load',
-    ],
-    github: 'https://github.com/Swetabh48/MealDeal',
-    live: 'https://meal-deal-zeta.vercel.app',
-    gradient: 'from-emerald-400 via-teal-500 to-cyan-500',
-    source: 'resume',
-  },
-  {
-    title: 'Attest',
-    role: 'Grounded RAG over SEC filings',
-    description:
-      'A Dockerized ingest and query pipeline over SEC 10-K / 10-Q filings with hybrid retrieval, claim-level grounding, and an evaluation harness so answers cite source sections instead of improvising.',
-    tech: ['Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'Docker'],
-    highlights: [
-      'Postgres job queues with SKIP LOCKED workers over ~38 SEC filings',
-      'Hybrid retrieval (FTS + vector via RRF) with reranking and a weak-context gate',
-      '40-question eval harness; Hit@5 improved 57.5% → 60.0% vs vector-only',
-      'Claim-level grounding classifier (93.3% accuracy) with citation-constrained generation',
-    ],
-    github: 'https://github.com/Swetabh48/Attest',
-    gradient: 'from-sky-400 via-indigo-500 to-blue-700',
-    source: 'resume',
-  },
-  {
-    title: 'BitHaven',
-    role: 'Full-stack marketplace',
-    description:
-      'A multi-vendor commerce platform with type-safe APIs, synchronized carts, Stripe Connect payouts, and performance tuned for large catalog browsing.',
-    tech: ['React', 'Next.js', 'MongoDB', 'Zustand', 'Stripe', 'PayloadCMS'],
-    highlights: [
-      '17+ type-safe API endpoints for users, products, and payments',
-      '98% reduced initial load with infinite scroll',
-      '44% faster page loads via intelligent prefetching',
-      'Multi-tenant architecture supporting 1,000+ vendors',
-    ],
-    github: 'https://github.com/Swetabh48/BitHaven',
-    live: 'https://salampuria-vendors-d48b.vercel.app/',
-    gradient: 'from-cyan-500 via-blue-500 to-indigo-500',
-    source: 'resume',
-  },
-  {
-    title: 'Audio-CNN Visualizer',
-    role: 'ML systems + interface',
-    description:
-      'An interactive visualization layer over a ResNet-inspired audio classifier—waveforms, mel spectrograms, and feature maps rendered after cloud inference.',
-    tech: ['Next.js', 'TypeScript', 'PyTorch', 'Modal', 'FastAPI', 'Tailwind'],
-    highlights: [
-      'Competitive ESC-50 accuracy with residual layer groups',
-      'Modal serverless GPU inference via FastAPI',
-      'Real-time waveform and feature-map exploration',
-      'Augmentation pipeline with masking and mixup',
-    ],
-    github: 'https://github.com/Swetabh48/Audio-CNN',
-    gradient: 'from-violet-500 via-fuchsia-500 to-pink-500',
-    source: 'resume',
-  },
+
 ];
 
 export const skills: Record<string, string[]> = {
-  Languages: ['TypeScript', 'JavaScript', 'Python', 'C++', 'C#'],
-  Frontend: ['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'HTML5', 'CSS3', 'XAML'],
-  Backend: ['Node.js', 'REST APIs', 'tRPC', 'FastAPI', 'ASP.NET Core'],
-  '.NET': ['.NET', '.NET MAUI'],
-  Databases: ['MongoDB', 'PostgreSQL', 'Prisma ORM'],
-  'AI / ML': ['PyTorch', 'TensorFlow', 'Azure OpenAI'],
-  Tools: ['Git', 'GitHub', 'GitLab', 'VS Code', 'Visual Studio', 'Modal', 'Vercel', 'Azure'],
+  Languages: ['JavaScript', 'TypeScript', 'Java', 'Python', 'C++'],
+  Frontend: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS'],
+  Backend: ['Node.js', 'Express.js', 'REST APIs', 'FastAPI'],
+  Databases: ['MongoDB', 'SQL'],
+  // 'AI / ML': ['PyTorch', 'TensorFlow', 'Azure OpenAI'],
+  Tools: ['Git', 'GitHub', 'VS Code', 'Vercel'],
 };
 
 export const codingProfiles = [
   {
     platform: 'LeetCode',
-    username: 'bully maguire',
-    badge: 'Knight',
-    rating: 1955,
+    username: 'Kartavya_Jaiswal',
+    // badge: 'Knight',
+    rating: 1552,
     color: 'from-yellow-400 to-orange-500',
-    link: 'https://leetcode.com/bully_maguire',
+    link: 'https://leetcode.com/u/Kartavya_Jaiswal/',
   },
-  {
-    platform: 'Codeforces',
-    username: 'SwetabhSalampuria',
-    badge: 'Specialist',
-    rating: 1418,
-    color: 'from-blue-400 to-cyan-500',
-    link: 'https://codeforces.com/profile/SwetabhSalampuria',
-  },
+  // {
+  //   platform: 'Codeforces',
+  //   username: 'SwetabhSalampuria',
+  //   badge: 'Specialist',
+  //   rating: 1418,
+  //   color: 'from-blue-400 to-cyan-500',
+  //   link: 'https://codeforces.com/profile/SwetabhSalampuria',
+  // },
   {
     platform: 'CodeChef',
-    username: 'bulmeranaam',
-    badge: '4★',
-    rating: 1812,
+    username: 'kartavya_jaiswal',
+    badge: '1★',
+    rating: 1234,
     color: 'from-purple-400 to-pink-500',
-    link: 'https://www.codechef.com/users/bulmeranaam',
+    link: 'https://www.codechef.com/users/kartavyajas',
   },
 ];
 
-export const achievements = [
-  {
-    title: '1st Place — Cognizance Mock Placement',
-    desc: 'Avishkar 2024 — competitive coding and interview simulation',
-    color: 'from-yellow-400 to-orange-400',
-  },
-  {
-    title: '1st Place — Botwars',
-    desc: 'Robotics competition at Botrush 2023',
-    color: 'from-blue-400 to-cyan-400',
-  },
-];
 
-export const responsibilities = [
-  {
-    title: 'Departmental Representative',
-    desc: 'Academic liaison for Civil Engineering students, facilitating faculty communication.',
-    period: '2023 – Present',
-  },
-  {
-    title: 'Student Mentor',
-    desc: 'Guided 1st–3rd year students for a smooth transition into academic life and campus culture.',
-    period: '2023 – Present',
-  },
-  {
-    title: 'Co-Coordinator, Culrav 2024–25',
-    desc: 'Co-coordinated KavyaSandhya, a poetry showcase featuring invited external guest artists.',
-    period: '2024 – 25',
-  },
-  {
-    title: 'Departmental Coordinator',
-    desc: 'Directed execution of 8 technical events under Culrav-Avishkar, supervising event teams.',
-    period: '2024 – 25',
-  },
-];
 
-export const extracurricular = {
-  title: 'Desi Sync',
-  desc: 'Performed in the team dance competition at Culrav, the college cultural fest, in 2023 and 2024.',
-};
+
 
 export const githubPreferredOrder = [
   'SpeakEasy',
@@ -295,44 +188,44 @@ export const themes: Theme[] = [
   },
 ];
 
-export interface UpcomingProject {
-  title: string;
-  status: 'Building now' | 'In progress' | 'Next up' | 'Expanding';
-  blurb: string;
-  focus: string[];
-}
+// export interface UpcomingProject {
+//   title: string;
+//   status: 'Building now' | 'In progress' | 'Next up' | 'Expanding';
+//   blurb: string;
+//   focus: string[];
+// }
 
 /** Active and upcoming builds — not all public yet. */
-export const upcomingProjects: UpcomingProject[] = [
-  {
-    title: 'MatchCore',
-    status: 'Building now',
-    blurb:
-      'A low-latency limit order book matching engine in modern C++. Price-time priority matching, multi-client binary TCP ingestion, and a measured path toward durability and market data — systems work with numbers attached, not just slides.',
-    focus: ['C++', 'Networking', 'Order books', 'Systems'],
-  },
-  {
-    title: 'Chopus',
-    status: 'Building now',
-    blurb:
-      'An agent-style developer tool with streaming replies and tool calling. Bun monorepo spanning a CLI and server — still moving fast, aimed at feeling useful in a real terminal workflow rather than a demo chat box.',
-    focus: ['TypeScript', 'Agents', 'Tool calling', 'Bun'],
-  },
-  {
-    title: 'MailSender',
-    status: 'In progress',
-    blurb:
-      'A practical outreach workflow for job applications — templated referral emails, resume attach, and delivery tracking across desktop and a companion Android app. Less flashy than most portfolio pieces, more useful day to day.',
-    focus: ['APIs', 'Email', 'Automation', 'Capacitor'],
-  },
-  {
-    title: 'YouKnowBall',
-    status: 'Expanding',
-    blurb:
-      'Football match winner and scoreline prediction, built end-to-end for the FIFA World Cup with Elo, form, head-to-head, and Dixon–Coles / ML models. Next: extend the same pipeline to club football — Premier League, La Liga, and other top leagues.',
-    focus: ['Python', 'XGBoost', 'FastAPI', 'Sports data'],
-  },
-];
+// export const upcomingProjects: UpcomingProject[] = [
+//   {
+//     title: 'MatchCore',
+//     status: 'Building now',
+//     blurb:
+//       'A low-latency limit order book matching engine in modern C++. Price-time priority matching, multi-client binary TCP ingestion, and a measured path toward durability and market data — systems work with numbers attached, not just slides.',
+//     focus: ['C++', 'Networking', 'Order books', 'Systems'],
+//   },
+//   {
+//     title: 'Chopus',
+//     status: 'Building now',
+//     blurb:
+//       'An agent-style developer tool with streaming replies and tool calling. Bun monorepo spanning a CLI and server — still moving fast, aimed at feeling useful in a real terminal workflow rather than a demo chat box.',
+//     focus: ['TypeScript', 'Agents', 'Tool calling', 'Bun'],
+//   },
+//   {
+//     title: 'MailSender',
+//     status: 'In progress',
+//     blurb:
+//       'A practical outreach workflow for job applications — templated referral emails, resume attach, and delivery tracking across desktop and a companion Android app. Less flashy than most portfolio pieces, more useful day to day.',
+//     focus: ['APIs', 'Email', 'Automation', 'Capacitor'],
+//   },
+//   {
+//     title: 'YouKnowBall',
+//     status: 'Expanding',
+//     blurb:
+//       'Football match winner and scoreline prediction, built end-to-end for the FIFA World Cup with Elo, form, head-to-head, and Dixon–Coles / ML models. Next: extend the same pipeline to club football — Premier League, La Liga, and other top leagues.',
+//     focus: ['Python', 'XGBoost', 'FastAPI', 'Sports data'],
+//   },
+// ];
 
 export const navLinks = [
   { href: '#featured', label: 'Work' },

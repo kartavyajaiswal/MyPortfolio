@@ -12,13 +12,15 @@ interface Props {
 export function FeaturedProjects({ theme }: Props) {
   const tilt = usePointerTilt({ strength: 5 });
 
+  if (!featuredProjects || featuredProjects.length === 0) return null;
+
   return (
     <section id="featured" className="studio-section relative px-6 py-28 md:px-10">
       <div className="mx-auto max-w-7xl">
         <SectionReveal>
           <SectionHeading
             title="Selected Work"
-            subtitle="Six products. Different domains. The same obsession with making hard systems feel clear."
+            subtitle="Engineering projects and practical solutions designed for impact."
             gradient={theme.colors.accent}
             kicker="01 / Work"
           />

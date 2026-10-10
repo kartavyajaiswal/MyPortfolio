@@ -14,6 +14,8 @@ const statusTone: Record<(typeof upcomingProjects)[number]['status'], string> = 
 };
 
 export function Building({ theme }: Props) {
+  if (!upcomingProjects || upcomingProjects.length === 0) return null;
+
   return (
     <section id="building" className="studio-section relative px-6 py-28 md:px-10">
       <div className="mx-auto max-w-7xl">

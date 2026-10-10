@@ -11,6 +11,8 @@ interface Props {
 }
 
 export function Responsibility({ theme }: Props) {
+  if (!responsibilities || responsibilities.length === 0) return null;
+
   return (
     <section id="responsibility" className="studio-section py-28 px-6 md:px-10 relative">
       <div className="max-w-7xl mx-auto">

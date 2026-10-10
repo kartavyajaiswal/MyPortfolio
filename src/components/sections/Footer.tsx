@@ -19,10 +19,10 @@ export function Footer({ theme }: Props) {
   const links = [
     { Icon: Github, href: contact.github, label: 'GitHub' },
     { Icon: Linkedin, href: contact.linkedin, label: 'LinkedIn' },
-    { Icon: Mail, href: `mailto:${contact.email}`, label: 'Email' },
-    { Icon: Phone, href: `tel:${contact.phone}`, label: 'Phone' },
+    { Icon: Mail, href: contact.email ? `mailto:${contact.email}` : '', label: 'Email' },
+    { Icon: Phone, href: contact.phone ? `tel:${contact.phone}` : '', label: 'Phone' },
     { Icon: FileText, href: contact.resume, label: 'Resume' },
-  ];
+  ].filter((item) => Boolean(item.href) && item.href !== '#');
 
   const openMailto = () => {
     const subject = encodeURIComponent(
@@ -83,10 +83,10 @@ export function Footer({ theme }: Props) {
               </span>
             </h3>
             <p className="mb-2 max-w-xl text-slate-400">
-              Open to full-time software engineering roles and ambitious product challenges.
+              {contact.availability || 'Open to full-time software engineering roles.'}
             </p>
             <p className="mb-8 text-sm text-slate-500">
-              {contact.email} · {contact.phone}
+              {[contact.email, contact.phone].filter(Boolean).join(' · ')}
             </p>
 
             <div className="mb-10 flex gap-3">
@@ -194,7 +194,7 @@ export function Footer({ theme }: Props) {
         </div>
 
         <p className="mt-14 text-center text-xs text-slate-600">
-          © {new Date().getFullYear()} Swetabh Salampuria
+          © {new Date().getFullYear()} {contact.name}
         </p>
       </div>
     </footer>
