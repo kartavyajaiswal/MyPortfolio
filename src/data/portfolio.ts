@@ -15,12 +15,12 @@ export interface FeaturedProject {
   title: string;
   description: string;
   tech: string[];
-  highlights: string[];
+  highlights?: string[];
   github: string;
   live?: string;
-  gradient: string;
-  source: 'resume' | 'github' | 'Personal Project' | string;
-  role: string;
+  gradient?: string;
+  source?: 'resume' | 'github' | 'Personal Project' | 'Academic Project' | string;
+  role?: string;
 }
 
 export interface ExperienceItem {
@@ -128,24 +128,55 @@ export const experience: ExperienceItem[] = [];
 
 export const featuredProjects: FeaturedProject[] = [
   {
-    title: 'CollabDoc',
-    role: 'Real-Time Collaborative Document Editor',
+    title: 'CollabDoc - Real-Time Collaborative Editor',
+    role: 'Full Stack Development',
     description:
-      'A full-stack real-time collaborative document editor that enables multiple users to write and edit documents together with live synchronization, user presence, and document history.',
-    tech: ['React', 'Vite', 'Tailwind CSS', 'TipTap', 'Yjs', 'Node.js', 'Express', 'Socket.io', 'MongoDB', 'JWT'],
+      'Developed a real-time collaborative text editor featuring y-websocket synchronization, JWT authentication, and comprehensive revision history.',
+    tech: ['React', 'Node.js', 'Yjs', 'MongoDB', 'Socket.io'],
     highlights: [
-      'Real-time multi-user editing powered by Yjs CRDT with live synchronization and colored user cursors',
-      'Implemented user authentication and document management using JWT, bcryptjs, and MongoDB',
-      'Built document persistence, revision history, document locking, tags, pinning, and offline support',
-      'Added speech-to-text, emoji reactions, synchronized Pomodoro timer, QR sharing, and PDF/Markdown/Text export',
-      'Deployed the frontend on Vercel and backend on Render for a complete full-stack application',
+      'Real-time multi-user document synchronization powered by Yjs CRDT & WebSockets',
+      'Secure user authentication and authorization using JWT with MongoDB persistence',
+      'Comprehensive revision history tracking, document locking, and multi-user cursor presence',
     ],
-    github: 'https://github.com/kartavyajaiswal/CollabDoc',
-    live: 'https://collab-doc-psi.vercel.app',
+    github: '#',
+    live: '#',
     gradient: 'from-amber-400 via-orange-500 to-rose-500',
     source: 'Personal Project',
   },
+  {
+    title: 'Explainable AI for EEG Seizure Detection',
+    role: 'ML & Academic Research',
+    description:
+      'Prepared an academic literature review and project report focusing on explainable artificial intelligence techniques for epileptic seizure detection using EEG signals.',
+    tech: ['Machine Learning', 'Python', 'Explainable AI'],
+    highlights: [
+      'Comprehensive academic literature review on biomedical EEG signal interpretation',
+      'Exploration of explainable artificial intelligence (XAI) models for transparent diagnostics',
+      'Comparative evaluation of neural architectures for automated seizure onset detection',
+    ],
+    github: '#',
+    live: '#',
+    gradient: 'from-cyan-400 via-sky-500 to-indigo-500',
+    source: 'Academic Project',
+  },
+  {
+    title: 'Transport Management System',
+    role: 'Web Development',
+    description:
+      'Built a web-based transport management application to streamline operations and logistics tracking.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    highlights: [
+      'Interactive dashboard for fleet dispatching, vehicle scheduling, and status tracking',
+      'Intuitive user interface streamlining transport logistics and daily operations monitoring',
+    ],
+    github: '#',
+    live: '#',
+    gradient: 'from-emerald-400 via-teal-500 to-cyan-500',
+    source: 'Personal Project',
+  },
 ];
+
+export const projects = featuredProjects;
 
 export const skills: Record<string, string[]> = {
   'Web Development': [

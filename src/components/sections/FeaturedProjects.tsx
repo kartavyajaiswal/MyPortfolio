@@ -60,20 +60,22 @@ export function FeaturedProjects({ theme }: Props) {
                       {project.title}
                     </h3>
                     <div className="flex gap-2">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="studio-icon !w-9 !h-9"
-                        aria-label={`${project.title} GitHub`}
-                      >
-                        <Github className="w-4 h-4" />
-                      </a>
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target={project.github.startsWith('http') ? '_blank' : undefined}
+                          rel={project.github.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="studio-icon !w-9 !h-9"
+                          aria-label={`${project.title} GitHub`}
+                        >
+                          <Github className="w-4 h-4" />
+                        </a>
+                      )}
                       {project.live && (
                         <a
                           href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target={project.live.startsWith('http') ? '_blank' : undefined}
+                          rel={project.live.startsWith('http') ? 'noopener noreferrer' : undefined}
                           className="studio-icon !w-9 !h-9"
                           aria-label={`${project.title} live demo`}
                         >
@@ -98,14 +100,16 @@ export function FeaturedProjects({ theme }: Props) {
                     ))}
                   </div>
 
-                  <div className="mt-auto grid gap-3 border-t border-white/10 pt-7 sm:grid-cols-2">
-                    {project.highlights.map((highlight) => (
-                      <div key={highlight} className="flex items-start gap-2.5">
-                        <div className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-300" />
-                        <p className="text-xs leading-relaxed text-slate-400">{highlight}</p>
-                      </div>
-                    ))}
-                  </div>
+                  {project.highlights && project.highlights.length > 0 && (
+                    <div className="mt-auto grid gap-3 border-t border-white/10 pt-7 sm:grid-cols-2">
+                      {project.highlights.map((highlight) => (
+                        <div key={highlight} className="flex items-start gap-2.5">
+                          <div className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-300" />
+                          <p className="text-xs leading-relaxed text-slate-400">{highlight}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.article>
             </SectionReveal>

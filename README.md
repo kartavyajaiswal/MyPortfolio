@@ -36,9 +36,11 @@ I am a Computer Science Engineering student pursuing my B.Tech at **Galgotias Un
 
 ## Featured Work
 
-| Project | Focus | Stack | Live / Code |
-| --- | --- | --- | --- |
-| **[CollabDoc](https://github.com/kartavyajaiswal/CollabDoc)** | Real-Time Collaborative Document Editor | React · Vite · Tailwind · TipTap · Yjs · Node.js · Express · Socket.io · MongoDB | [Live Demo](https://collab-doc-psi.vercel.app) · [GitHub](https://github.com/kartavyajaiswal/CollabDoc) |
+| Project | Focus | Stack |
+| --- | --- | --- |
+| **CollabDoc - Real-Time Collaborative Editor** | Real-Time Collaborative Editor | React · Node.js · Yjs · MongoDB · Socket.io |
+| **Explainable AI for EEG Seizure Detection** | Explainable AI & Biomedical Signal Research | Machine Learning · Python · Explainable AI |
+| **Transport Management System** | Operations & Logistics Management | HTML · CSS · JavaScript |
 
 ---
 
