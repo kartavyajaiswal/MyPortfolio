@@ -1,13 +1,13 @@
 <div align="center">
 
-# Swetabh Salampuria
+# Kartavya Jaiswal
 
-### Software Engineer · AI Systems · Product Engineering
+### B.Tech CSE Student & Full Stack Developer
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-MyPortfolio-0ea5e9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Swetabh48/MyPortfolio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swetabh-salampuria)
-[![Email](https://img.shields.io/badge/Email-Write%20me-111827?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swetabhsalampuria@gmail.com)
-[![Resume](https://img.shields.io/badge/Resume-View-22c55e?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1Tyjy5hwghXVmXtLOp7ivPEfmwdZr00S6/view?usp=sharing)
+[![Portfolio](https://img.shields.io/badge/Portfolio-GitHub-0ea5e9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kartavyajaiswal/MyPortfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartavyajaiswal)
+[![Email](https://img.shields.io/badge/Email-Write%20me-111827?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kartavyajaiswal242@gmail.com)
+[![Resume](https://img.shields.io/badge/Resume-View-22c55e?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk)
 
 <br/>
 
@@ -20,7 +20,7 @@
 └──────────────────────────────────────────────────────────────┘
 ```
 
-**Open to full-time software engineering roles.**
+**Open to full-time Software Engineering and Full Stack Development opportunities.**
 
 </div>
 
@@ -28,52 +28,30 @@
 
 ## About
 
-I build production systems where **modern web architecture**, **practical AI**, and **clean interfaces** meet.
+I am a Computer Science Engineering student pursuing my B.Tech at **Galgotias University**, Greater Noida (Expected June 2027). I focus on Full Stack Development, Data Structures and Algorithms, and building scalable web applications with clean architectures and responsive interfaces.
 
-Currently a Software Engineer at **Wavexcel Technologies** on a **Siemens Energy** engagement — shipping proposal workflows, document intelligence, and client-facing delivery systems that have to survive real constraints, not demos.
-
-**MNNIT Allahabad** · B.Tech Civil Engineering · Minor in Computer Science & Technology · CPI **8.05**
+**Galgotias University** · B.Tech. Computer Science and Engineering · CPI **6.75**
 
 ---
 
-## What this portfolio is
+## Featured Work
 
-A dark, cinematic developer site — not a static resume dump.
-
-| Experience | What you get |
-| --- | --- |
-| **Interactive 3D world** | A suited character that follows scroll, reacts to hover, greets on click, and dances when you find the gift |
-| **Selected work** | Long-form case studies for shipped products across commerce, ML, collaboration, and regulated domains |
-| **Motion with intent** | Framer Motion reveals, pointer tilt on project cards, scroll-linked statement bands |
-| **Direct mailbox** | Contact form that sends straight to my inbox |
-| **Hidden surprise** | Click the gift (or press `G`) for a five-second celebration |
+| Project | Focus | Stack | Live / Code |
+| --- | --- | --- | --- |
+| **[CollabDoc](https://github.com/kartavyajaiswal/CollabDoc)** | Real-Time Collaborative Document Editor | React · Vite · Tailwind · TipTap · Yjs · Node.js · Express · Socket.io · MongoDB | [Live Demo](https://collab-doc-psi.vercel.app) · [GitHub](https://github.com/kartavyajaiswal/CollabDoc) |
 
 ---
 
-## Featured work
+## Competitive Programming
 
-| Project | Focus | Stack |
+| Platform | Handle | Rating / Milestone |
 | --- | --- | --- |
-| **[BitHaven](https://github.com/Swetabh48/BitHaven)** | Multi-vendor marketplace | React · Next.js · MongoDB · Stripe |
-| **[Audio-CNN Visualizer](https://github.com/Swetabh48)** | ML systems + interface | Next.js · PyTorch · FastAPI · Modal |
-| **[IdeaFlow](https://github.com/Swetabh48)** | Real-time collaboration | Convex · Clerk · canvas tooling |
-| **[MealDeal](https://github.com/Swetabh48/MealDeal)** | Personalized nutrition product | AI guidance · planning workflows |
-| **[HirePath](https://github.com/Swetabh48/HirePath)** | Voice-first interview practice | Real-time AI voice · Firebase |
-| **[Fuel-Machine](https://github.com/Swetabh48/Fuel-Machine)** | FuelEU Maritime compliance | TypeScript · hexagonal domain design |
+| **LeetCode** | [Kartavya_Jaiswal](https://leetcode.com/u/Kartavya_Jaiswal/) | **1552** |
+| **CodeChef** | [kartavya_jaiswal](https://www.codechef.com/users/kartavyajas) | **1★** · **1234** |
 
 ---
 
-## Competitive programming
-
-| Platform | Handle | Level |
-| --- | --- | --- |
-| **LeetCode** | [bully_maguire](https://leetcode.com/bully_maguire) | Knight · **1955** |
-| **CodeChef** | [bulmeranaam](https://www.codechef.com/users/bulmeranaam) | **4★** · **1812** |
-| **Codeforces** | [SwetabhSalampuria](https://codeforces.com/profile/SwetabhSalampuria) | Specialist · **1418** |
-
----
-
-## Stack behind the site
+## Stack Behind the Site
 
 ```text
 React 19  ·  TypeScript  ·  Vite  ·  Tailwind CSS
@@ -81,14 +59,14 @@ React Three Fiber  ·  Drei  ·  Three.js
 Framer Motion  ·  Lucide
 ```
 
-Built for a **studio-dark** look: glass surfaces, expressive type, scroll-synced 3D, and restrained motion that still feels alive.
+Built for a **studio-dark** aesthetic: glassmorphism, expressive typography, scroll-synced 3D, and restrained micro-interactions that feel responsive and alive.
 
 ---
 
-## Run locally
+## Run Locally
 
 ```bash
-git clone https://github.com/Swetabh48/MyPortfolio.git
+git clone https://github.com/kartavyajaiswal/MyPortfolio.git
 cd MyPortfolio
 npm install
 npm run dev
@@ -98,20 +76,10 @@ Then open [http://localhost:5173](http://localhost:5173) (or the port Vite print
 
 | Script | Purpose |
 | --- | --- |
-| `npm run dev` | Local development |
-| `npm run build` | Production build |
+| `npm run dev` | Local development server |
+| `npm run build` | Production bundle build |
 | `npm run preview` | Preview the production build |
-| `npm run lint` | ESLint |
-
----
-
-## Explore the experience
-
-1. Move your cursor — the character leans and tracks attention  
-2. Hover a project — he turns, points, and comments  
-3. Click empty space — a greeting  
-4. Find the **gift** bottom-right (or press **`G`**) — five-second dance  
-5. Scroll to **Contact** — send a note from the mailbox  
+| `npm run lint` | ESLint check |
 
 ---
 
@@ -119,7 +87,7 @@ Then open [http://localhost:5173](http://localhost:5173) (or the port Vite print
 
 <div align="center">
 
-**[GitHub](https://github.com/Swetabh48)** · **[LinkedIn](https://linkedin.com/in/swetabh-salampuria)** · **[Email](mailto:swetabhsalampuria@gmail.com)** · **[Resume](https://drive.google.com/file/d/1Tyjy5hwghXVmXtLOp7ivPEfmwdZr00S6/view?usp=sharing)**
+**[GitHub](https://github.com/kartavyajaiswal)** · **[LinkedIn](https://www.linkedin.com/in/kartavyajaiswal)** · **[Email](mailto:kartavyajaiswal242@gmail.com)** · **[Resume](https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk)**
 
 <br/>
 

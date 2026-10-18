@@ -50,11 +50,13 @@ export function Coding({ theme }: Props) {
                   >
                     {profile.username}
                   </a>
-                  <span
-                    className={`inline-block px-4 py-2 bg-gradient-to-r ${profile.color} rounded-full text-sm font-semibold mb-3`}
-                  >
-                    {profile.badge}
-                  </span>
+                  {profile.badge && (
+                    <span
+                      className={`inline-block px-4 py-2 bg-gradient-to-r ${profile.color} rounded-full text-sm font-semibold mb-3`}
+                    >
+                      {profile.badge}
+                    </span>
+                  )}
                   <div className="display-title text-4xl font-semibold text-white">
                     {profile.rating}
                   </div>

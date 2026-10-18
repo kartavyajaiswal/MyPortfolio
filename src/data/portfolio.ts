@@ -19,12 +19,49 @@ export interface FeaturedProject {
   github: string;
   live?: string;
   gradient: string;
-  source: 'resume' | 'github';
+  source: 'resume' | 'github' | 'Personal Project' | string;
   role: string;
 }
 
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  client?: string;
+  location?: string;
+  period: string;
+  bullets: string[];
+}
+
+export interface UpcomingProject {
+  title: string;
+  status: 'Building now' | 'In progress' | 'Next up' | 'Expanding';
+  blurb: string;
+  focus: string[];
+}
+
+export interface Achievement {
+  title: string;
+  desc: string;
+  color: string;
+}
+
+export interface ResponsibilityItem {
+  title: string;
+  desc: string;
+  period: string;
+}
+
+export interface CodingProfile {
+  platform: string;
+  username: string;
+  badge?: string;
+  rating: number;
+  color: string;
+  link: string;
+}
+
 export const contact = {
-  name: 'Kartavya Jaisal',
+  name: 'Kartavya Jaiswal',
   role: 'B.Tech CSE Student & Developer',
   title: 'B.Tech CSE Student & Developer',
   email: 'kartavyajaiswal242@gmail.com',
@@ -60,7 +97,6 @@ export const education = [
     year: '2022',
     score: '76.4%',
   },
-
 ];
 
 export const coursework = [
@@ -72,25 +108,7 @@ export const coursework = [
   'OOPs',
 ];
 
-// export const experience = [
-//   {
-//     role: 'Software Engineer',
-//     company: 'Wavexcel Technologies Pvt. Ltd.',
-//     client: 'Siemens Energy Ltd.',
-//     location: 'Gurugram, Haryana',
-//     period: 'January 2026 – July 2026',
-//     bullets: [
-//       'Designed a few-shot Azure OpenAI extraction pipeline (Python/FastAPI) that inferred a 95-field schema from 15–20 labeled samples, replacing a brittle hardcoded field catalog.',
-//       'Shipped async FastAPI job APIs with SSE progress streaming and Excel/HTML/PDF export for a production .NET MAUI Windows client, keeping long-running work off the request path.',
-//       'Built an iterative OCR + AI-vision correction loop (PaddleOCR, Hermes) that reconstructed structured HTML layouts from unstructured PDFs.',
-//       'Implemented a formula-driven computation engine mapping 31 input drivers to 179 dependent outputs; validated with a 17-case suite at 100% pass rate.',
-//       'Built a multi-agent LOS GenAI pipeline (planning agent → doc/extract agent → formula backbone): the planner acts as a readiness gate and writes a project plan of record; the doc agent extracts only bound drivers from staged sources, then calculates and fills HTML/Excel/PDF datasheets.',
-//       'Shipped a confidence-gated review UI that surfaced low-certainty extractions first, cutting manual scan time by letting reviewers jump straight to uncertain fields.',
-//       'Built versioned client configuration (schema + computation profiles) so new Siemens project templates could be onboarded without redeploying the Windows app.',
-//       'Added end-to-end job observability (queued → OCR → extract → compute → export) with retryable stages and actionable failure states in the MAUI client.',
-//     ],
-//   },
-// ];
+export const experience: ExperienceItem[] = [];
 
 export const featuredProjects: FeaturedProject[] = [
   {
@@ -107,11 +125,10 @@ export const featuredProjects: FeaturedProject[] = [
       'Deployed the frontend on Vercel and backend on Render for a complete full-stack application',
     ],
     github: 'https://github.com/kartavyajaiswal/CollabDoc',
-    live: 'collab-doc-psi.vercel.app',
+    live: 'https://collab-doc-psi.vercel.app',
     gradient: 'from-amber-400 via-orange-500 to-rose-500',
     source: 'Personal Project',
   },
-
 ];
 
 export const skills: Record<string, string[]> = {
@@ -119,27 +136,17 @@ export const skills: Record<string, string[]> = {
   Frontend: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS'],
   Backend: ['Node.js', 'Express.js', 'REST APIs', 'FastAPI'],
   Databases: ['MongoDB', 'SQL'],
-  // 'AI / ML': ['PyTorch', 'TensorFlow', 'Azure OpenAI'],
   Tools: ['Git', 'GitHub', 'VS Code', 'Vercel'],
 };
 
-export const codingProfiles = [
+export const codingProfiles: CodingProfile[] = [
   {
     platform: 'LeetCode',
     username: 'Kartavya_Jaiswal',
-    // badge: 'Knight',
     rating: 1552,
     color: 'from-yellow-400 to-orange-500',
     link: 'https://leetcode.com/u/Kartavya_Jaiswal/',
   },
-  // {
-  //   platform: 'Codeforces',
-  //   username: 'SwetabhSalampuria',
-  //   badge: 'Specialist',
-  //   rating: 1418,
-  //   color: 'from-blue-400 to-cyan-500',
-  //   link: 'https://codeforces.com/profile/SwetabhSalampuria',
-  // },
   {
     platform: 'CodeChef',
     username: 'kartavya_jaiswal',
@@ -150,28 +157,15 @@ export const codingProfiles = [
   },
 ];
 
+export const achievements: Achievement[] = [];
 
+export const responsibilities: ResponsibilityItem[] = [];
 
+export const upcomingProjects: UpcomingProject[] = [];
 
+export const githubPreferredOrder = ['CollabDoc'];
 
-export const githubPreferredOrder = [
-  'SpeakEasy',
-  'MealDeal',
-  'Attest',
-  'BitHaven',
-  'Audio-CNN',
-  'HirePath',
-  'Fuel-Machine',
-  'MedLog',
-  'Chopus',
-  '6-DOF-Robotic-Arm',
-  'HealthGuru',
-  'PropertyHub',
-  'IdeaFlow',
-  'WeConnect',
-];
-
-export const githubHiddenRepos = ['MyPortfolio', 'deepeval'];
+export const githubHiddenRepos = ['MyPortfolio'];
 
 export const themes: Theme[] = [
   {
@@ -188,50 +182,11 @@ export const themes: Theme[] = [
   },
 ];
 
-// export interface UpcomingProject {
-//   title: string;
-//   status: 'Building now' | 'In progress' | 'Next up' | 'Expanding';
-//   blurb: string;
-//   focus: string[];
-// }
-
-/** Active and upcoming builds — not all public yet. */
-// export const upcomingProjects: UpcomingProject[] = [
-//   {
-//     title: 'MatchCore',
-//     status: 'Building now',
-//     blurb:
-//       'A low-latency limit order book matching engine in modern C++. Price-time priority matching, multi-client binary TCP ingestion, and a measured path toward durability and market data — systems work with numbers attached, not just slides.',
-//     focus: ['C++', 'Networking', 'Order books', 'Systems'],
-//   },
-//   {
-//     title: 'Chopus',
-//     status: 'Building now',
-//     blurb:
-//       'An agent-style developer tool with streaming replies and tool calling. Bun monorepo spanning a CLI and server — still moving fast, aimed at feeling useful in a real terminal workflow rather than a demo chat box.',
-//     focus: ['TypeScript', 'Agents', 'Tool calling', 'Bun'],
-//   },
-//   {
-//     title: 'MailSender',
-//     status: 'In progress',
-//     blurb:
-//       'A practical outreach workflow for job applications — templated referral emails, resume attach, and delivery tracking across desktop and a companion Android app. Less flashy than most portfolio pieces, more useful day to day.',
-//     focus: ['APIs', 'Email', 'Automation', 'Capacitor'],
-//   },
-//   {
-//     title: 'YouKnowBall',
-//     status: 'Expanding',
-//     blurb:
-//       'Football match winner and scoreline prediction, built end-to-end for the FIFA World Cup with Elo, form, head-to-head, and Dixon–Coles / ML models. Next: extend the same pipeline to club football — Premier League, La Liga, and other top leagues.',
-//     focus: ['Python', 'XGBoost', 'FastAPI', 'Sports data'],
-//   },
-// ];
-
 export const navLinks = [
   { href: '#featured', label: 'Work' },
-  { href: '#building', label: 'Now' },
-  { href: '#experience', label: 'Experience' },
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
+  { href: '#coding', label: 'Profiles' },
+  { href: '#education', label: 'Education' },
   { href: '#contact', label: 'Contact' },
 ];

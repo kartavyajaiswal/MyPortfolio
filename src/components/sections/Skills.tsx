@@ -14,7 +14,7 @@ export function Skills({ theme }: Props) {
         <SectionReveal>
           <SectionHeading
             title="Skills"
-            subtitle="A practical toolkit chosen per problem—web, backend, AI, cloud, and native client delivery."
+            subtitle="A focused toolkit for full-stack engineering, scalable backend APIs, and modern web applications."
             gradient={theme.colors.accent}
             kicker="Capabilities"
           />
