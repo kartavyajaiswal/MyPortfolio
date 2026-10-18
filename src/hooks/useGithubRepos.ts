@@ -27,10 +27,55 @@ export function useGithubRepos() {
   useEffect(() => {
     const fetchRepos = async () => {
       try {
-        const response = await fetch(
-          `https://api.github.com/users/${contact.githubUser}/repos?sort=updated&per_page=100`,
+        const username = contact.githubUser || 'codebykartavya';
+        const headers: HeadersInit = {
+          Accept: 'application/vnd.github.v3+json',
+        };
+
+        // Support personal token from .env for rate-limit protection (5000 req/hr)
+        const envToken = import.meta.env.VITE_GITHUB_TOKEN;
+        if (envToken) {
+          headers.Authorization = `Bearer ${envToken}`;
+        }
+
+        let response = await fetch(
+          `https://api.github.com/users/${username}/repos?sort=updated&per_page=100`,
+          { headers },
         );
-        if (!response.ok) throw new Error('Failed to fetch GitHub repos');
+
+        // If the primary username is not found (404), fall back to active username
+        if (response.status === 404 && username !== 'kartavyajaiswal') {
+          console.warn(
+            `[useGithubRepos] GitHub user "${username}" returned 404. Attempting fallback to "kartavyajaiswal".`,
+          );
+          const fallbackResponse = await fetch(
+            `https://api.github.com/users/kartavyajaiswal/repos?sort=updated&per_page=100`,
+            { headers },
+          );
+          if (fallbackResponse.ok) {
+            response = fallbackResponse;
+          }
+        }
+
+        // Handle rate limiting (403)
+        if (response.status === 403) {
+          const resetHeader = response.headers.get('x-ratelimit-reset');
+          const resetTime = resetHeader
+            ? new Date(parseInt(resetHeader, 10) * 1000).toLocaleTimeString()
+            : null;
+          throw new Error(
+            resetTime
+              ? `GitHub API rate limit exceeded (60 req/hr). Resets at ${resetTime}. Add VITE_GITHUB_TOKEN in .env to increase to 5,000 req/hr.`
+              : 'GitHub API rate limit exceeded. Add VITE_GITHUB_TOKEN in .env to increase to 5,000 req/hr.',
+          );
+        }
+
+        if (!response.ok) {
+          throw new Error(
+            `GitHub API error (${response.status}): ${response.statusText}`,
+          );
+        }
+
         const data: GithubRepo[] = await response.json();
 
         const filtered = data
@@ -51,6 +96,7 @@ export function useGithubRepos() {
 
         setRepos(filtered);
       } catch (err) {
+        console.error('Failed to fetch GitHub repos:', err);
         setError(err instanceof Error ? err.message : 'Unknown error');
       } finally {
         setLoading(false);

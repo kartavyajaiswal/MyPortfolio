@@ -70,7 +70,7 @@ export const contact = {
   github: 'https://github.com/codebykartavya',
   githubUser: 'codebykartavya',
   leetcode: 'https://leetcode.com/Kartavya_Jaiswal',
-  linkedin: '#',
+  linkedin: 'https://linkedin.com/in/kartavyajaiswal',
   twitter: '#',
   resume:
     'https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk',
