@@ -5,7 +5,7 @@
 ### B.Tech CSE Student & Full Stack Developer
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-GitHub-0ea5e9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kartavyajaiswal/MyPortfolio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kartavyajaiswal)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 [![Email](https://img.shields.io/badge/Email-Write%20me-111827?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kartavyajaiswal242@gmail.com)
 [![Resume](https://img.shields.io/badge/Resume-View-22c55e?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk)
 
@@ -89,7 +89,7 @@ Then open [http://localhost:5173](http://localhost:5173) (or the port Vite print
 
 <div align="center">
 
-**[GitHub](https://github.com/kartavyajaiswal)** · **[LinkedIn](https://www.linkedin.com/in/kartavyajaiswal)** · **[Email](mailto:kartavyajaiswal242@gmail.com)** · **[Resume](https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk)**
+**[GitHub](https://github.com/codebykartavya)** · **[LinkedIn](#)** · **[LeetCode](https://leetcode.com/Kartavya_Jaiswal)** · **[Email](mailto:kartavyajaiswal242@gmail.com)** · **[Resume](https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk)**
 
 <br/>
 

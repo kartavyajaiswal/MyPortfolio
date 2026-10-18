@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
-import { FileText, Github, Linkedin, Mail, Phone, Send } from 'lucide-react';
+import {
+  Code2,
+  FileText,
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  Send,
+  Twitter,
+} from 'lucide-react';
 import { contact } from '../../data/portfolio';
 import type { Theme } from '../../data/portfolio';
 
@@ -19,10 +28,12 @@ export function Footer({ theme }: Props) {
   const links = [
     { Icon: Github, href: contact.github, label: 'GitHub' },
     { Icon: Linkedin, href: contact.linkedin, label: 'LinkedIn' },
+    { Icon: Twitter, href: contact.twitter, label: 'Twitter' },
+    { Icon: Code2, href: contact.leetcode, label: 'LeetCode' },
     { Icon: Mail, href: contact.email ? `mailto:${contact.email}` : '', label: 'Email' },
     { Icon: Phone, href: contact.phone ? `tel:${contact.phone}` : '', label: 'Phone' },
     { Icon: FileText, href: contact.resume, label: 'Resume' },
-  ].filter((item) => Boolean(item.href) && item.href !== '#');
+  ].filter((item) => Boolean(item.href));
 
   const openMailto = () => {
     const subject = encodeURIComponent(
@@ -98,6 +109,7 @@ export function Footer({ theme }: Props) {
                   rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="studio-icon"
                   aria-label={label}
+                  title={label}
                 >
                   <Icon className="h-4 w-4" />
                 </a>

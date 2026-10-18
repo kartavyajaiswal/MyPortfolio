@@ -67,9 +67,11 @@ export const contact = {
   email: 'kartavyajaiswal242@gmail.com',
   phone: '+91-9170336632',
   whatsapp: '+91-9170336632',
-  github: 'https://github.com/kartavyajaiswal',
-  githubUser: 'kartavyajaiswal',
-  linkedin: 'https://www.linkedin.com/in/kartavyajaiswal',
+  github: 'https://github.com/codebykartavya',
+  githubUser: 'codebykartavya',
+  leetcode: 'https://leetcode.com/Kartavya_Jaiswal',
+  linkedin: '#',
+  twitter: '#',
   resume:
     'https://drive.google.com/file/d/1y_dn9YDJr_KLV7Wc6qdiCgD-i-O6OUUW/view?usp=drivesdk',
   tagline:
@@ -215,7 +217,7 @@ export const codingProfiles: CodingProfile[] = [
     username: 'Kartavya_Jaiswal',
     rating: 1552,
     color: 'from-yellow-400 to-orange-500',
-    link: 'https://leetcode.com/u/Kartavya_Jaiswal/',
+    link: 'https://leetcode.com/Kartavya_Jaiswal',
   },
   {
     platform: 'CodeChef',

@@ -1,5 +1,14 @@
 import { motion } from 'framer-motion';
-import { ArrowDownRight, ArrowUpRight, FileText, Github, Linkedin, Mail } from 'lucide-react';
+import {
+  ArrowDownRight,
+  ArrowUpRight,
+  Code2,
+  FileText,
+  Github,
+  Linkedin,
+  Mail,
+  Twitter,
+} from 'lucide-react';
 import { contact } from '../../data/portfolio';
 import type { Theme } from '../../data/portfolio';
 
@@ -14,9 +23,11 @@ export function Hero({ theme }: HeroProps) {
   const socials = [
     { Icon: Github, href: contact.github, label: 'GitHub' },
     { Icon: Linkedin, href: contact.linkedin, label: 'LinkedIn' },
+    { Icon: Twitter, href: contact.twitter, label: 'Twitter' },
+    { Icon: Code2, href: contact.leetcode, label: 'LeetCode' },
     { Icon: Mail, href: `mailto:${contact.email}`, label: 'Email' },
     { Icon: FileText, href: contact.resume, label: 'Resume' },
-  ];
+  ].filter((item) => Boolean(item.href));
 
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden studio-hero">
