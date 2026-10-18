@@ -84,18 +84,34 @@ export const about = {
   ],
 };
 
-export const education = [
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  timeline: string;
+  description: string;
+  name: string;
+  year: string;
+  score?: string;
+}
+
+export const education: EducationItem[] = [
   {
-    name: 'Galgotias University',
-    degree: 'B.Tech. Computer Science and Engineering',
-    year: '2023 – 2027',
-    score: 'CPI: 6.75',
+    degree: 'B.Tech in Computer Science Engineering',
+    institution: 'Galgotias University, Greater Noida',
+    timeline: '2023 - 2027 (Expected)',
+    description:
+      'Focusing on web development, data analytics, and robust API development.',
+    name: 'Galgotias University, Greater Noida',
+    year: '2023 - 2027 (Expected)',
   },
   {
+    degree: 'Intermediate / High School',
+    institution: 'Saint Ann College',
+    timeline: 'Graduated 2022',
+    description:
+      'Completed foundational studies with a strong emphasis on mathematics and computer science.',
     name: 'Saint Ann College',
-    degree: 'ICSE — Class XII',
-    year: '2022',
-    score: '76.4%',
+    year: 'Graduated 2022',
   },
 ];
 
@@ -132,11 +148,34 @@ export const featuredProjects: FeaturedProject[] = [
 ];
 
 export const skills: Record<string, string[]> = {
-  Languages: ['JavaScript', 'TypeScript', 'Java', 'Python', 'C++'],
-  Frontend: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS'],
-  Backend: ['Node.js', 'Express.js', 'REST APIs', 'FastAPI'],
-  Databases: ['MongoDB', 'SQL'],
-  Tools: ['Git', 'GitHub', 'VS Code', 'Vercel'],
+  'Web Development': [
+    'React',
+    'TypeScript',
+    'JavaScript',
+    'Tailwind CSS',
+    'HTML5 / CSS3',
+  ],
+  'Backend & APIs': [
+    'Node.js',
+    'Express.js',
+    'API Development',
+    'REST APIs',
+    'FastAPI',
+  ],
+  'Data Analytics': [
+    'Python',
+    'SQL',
+    'Data Analysis',
+    'Data Structures & Algorithms',
+    'Pandas',
+  ],
+  'Databases & Tools': [
+    'MongoDB',
+    'SQL',
+    'Git & GitHub',
+    'VS Code',
+    'Vercel',
+  ],
 };
 
 export const codingProfiles: CodingProfile[] = [

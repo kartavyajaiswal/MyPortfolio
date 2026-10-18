@@ -34,12 +34,19 @@ export function Education({ theme }: Props) {
                     <p className="text-slate-300 mb-1">{edu.degree}</p>
                     <p className="text-sm text-slate-500">{edu.year}</p>
                   </div>
-                  <div
-                    className={`text-3xl font-semibold bg-gradient-to-r ${theme.colors.accent} bg-clip-text text-transparent`}
-                  >
-                    {edu.score}
-                  </div>
+                  {edu.score && (
+                    <div
+                      className={`text-3xl font-semibold bg-gradient-to-r ${theme.colors.accent} bg-clip-text text-transparent`}
+                    >
+                      {edu.score}
+                    </div>
+                  )}
                 </div>
+                {edu.description && (
+                  <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                    {edu.description}
+                  </p>
+                )}
               </GlassCard>
             </SectionReveal>
           ))}
